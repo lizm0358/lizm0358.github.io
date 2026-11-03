@@ -1,20 +1,121 @@
-h1 {
+/* Defined functions */
+body {
+    font-family: arial, sans-serif; 
+    margin: 0px;
+    color: #000000;
+    background-color: #D4E9E7;}
+
+
+.page-container {
+  width: 75;
+  background-color:#A9D4CF; 
+  padding: 0px;
+}
+
+.text-box {
+  background-color: #D4E9E7;
+  color: #2c3e50;            
+  padding: 0px;            
+  margin: 20px;           
+  width: 75%; 
+} 
+             
+<!--Header-->
+
+.layered {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+}
+
+.layered img {
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+  display:block;
+}
+
+.layered h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size:48px;
+    font-weight: normal;
+    margin: 0; 
     text-align: center;
+}
+
+<!--Navigation Bar-->
+
+.nav-bar {
+    background-color: #D4E9E7
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0; 
+}
+
+nav li {
+    width: 33.33%;
+    text-align: center;
+    padding: 10 px 0;
+    border-right: 1 px solid #888;
+    box-sizing: border-box;
+}
+
+nav li:last-child {
+    border-right: none;
+}
+
+nav a { 
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+<!--Article Section-->
+
+.text-box {
+    padding: 8 px;
+}
+
+h2 {
+    font-size:26px;
+    font-weight:normal;
+    margin-top: 16px;
+    margin-bottom: 12px;
+}
+
+<!--Article Content-->
+
+.article-content img {
+    width: 255px;
+    float: left;
+    margin-right: 16px;
+    margin-bottom: 10px;
+}
+
+<!--Fact Section-->
+h1 {
+    text-align: center; 
     margin-top: 20px;
     font-family: arial;
+    font-weight:300;
     color: #FFFFFF;}
 overlay-text {
     text-align: center;
     margin-top: 20px;
     font-family: arial;
     color: #FFFFFF;}
-h2 {
-    text-align: center;
-    margin-top: 20px;
-    font-family: arial;
-    color: #000000;}
-body {
-    font-family: arial; 
+
+h3 {
     text-align: left;
     margin-top: 20px;
     font-family: arial;
