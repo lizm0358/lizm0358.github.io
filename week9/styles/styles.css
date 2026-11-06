@@ -1,0 +1,147 @@
+/* Meyerweb-inspired CSS reset */
+html,
+body,
+div,
+span,
+article,
+header,
+main,
+footer,
+h1,
+h2,
+h3,
+p,
+blockquote,
+figure,
+ul,
+ol,
+li,
+table,
+thead,
+tbody,
+tfoot,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+header,
+main,
+footer,
+figure {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+    content: "";
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*This is a comment in CSS*/
+
+/******************************************************************
+                    Main Styles
+******************************************************************/
+html{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+/*targets a class*/
+.container{
+    max-width:900px;
+    background-color:blue;
+
+    /*centre the site in the browswer */ 
+    margin:0 auto;
+
+
+/*when you give the margin two values, it means
+    top-bottom
+    left-right
+...so margin:0 auto automatically applies the same margin on either side of the element */
+}
+
+h1{
+    font-size:36px;
+    color:#d51c1c;
+    /*margin is the space around an element, between other elements*/
+    margin-bottom:10px;
+    /*padding is the space inside an element, it pushes content away from the edge*/
+    padding:10px;
+}
+
+
+/******************************************************************
+                    Main Styles
+******************************************************************/
+
+/*stylethe a tags inside the nav only */
+nav a{
+    /*make the anchor tags block elements (so they behave like divs)*/
+    display:block;
+    background-color: cadetblue;
+    border-top: 2px solid darkblue;
+    border-bottom: 2px solid darkblue;
+
+    padding: 10px;
+    text-align: center;
+
+    /*remove the underline on the link*/ 
+    text-decoration:none;
+}
+
+
+/*hover for anything with a cursor, active for touchscreens*/
+nav a:hover, nav a:active{
+    background-color: white;
+}
+/******************************************************************
+                    MEDIA QUERIES
+******************************************************************/
+    
+@media screen and (min-width:720px){
+        /*only apply the styles when the screen is 720 px or larger */
+    nav a{
+        float:left;
+        width: 25%;
+        /*use something called box-sizing, which can be used to 
+        make the border and padding not count towards the width and height of the element */
+        box-sizing: border-box;
+
+    }
+ }
+
+ @media screen and (min-width:900px){
+    /*these styles only apply at 900 px and above*/
+    nav a{
+        background-color:chartreuse;
+    }
+ }
