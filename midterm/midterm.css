@@ -1,22 +1,22 @@
-/* Defined functions */
+
 body {
-    font-family: arial, sans-serif; 
+font-family: arial, sans-serif; 
     margin: 0px;
     color: #000000;
     background-color: #D4E9E7;}
 
 
 .page-container {
-  width: 75;
+  margin: 0 auto;
+  width: 75%;
   background-color:#A9D4CF; 
   padding: 0px;
 }
 
 .text-box {
   background-color: #D4E9E7;
-  color: #2c3e50;            
-  padding: 0px;            
-  margin: 20px;           
+  padding: 0px;
+  margin: 20px;  
   width: 75%; 
 } 
              
@@ -64,8 +64,8 @@ nav ul {
 nav li {
     width: 33.33%;
     text-align: center;
-    padding: 10 px 0;
-    border-right: 1 px solid #888;
+    padding: 10px 0;
+    border-right: 1px solid #888;
     box-sizing: border-box;
 }
 
@@ -83,7 +83,7 @@ nav a {
 <!--Article Section-->
 
 .text-box {
-    padding: 8 px;
+    padding: 8px;
 }
 
 h2 {
@@ -95,8 +95,8 @@ h2 {
 
 <!--Article Content-->
 
-.article-content img {
-    width: 255px;
+.article-image {
+    width: 25%;
     float: left;
     margin-right: 16px;
     margin-bottom: 10px;
@@ -109,7 +109,7 @@ h1 {
     font-family: arial;
     font-weight:300;
     color: #FFFFFF;}
-overlay-text {
+.overlay-text {
     text-align: center;
     margin-top: 20px;
     font-family: arial;
